@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boAt Rockerz 430 - Hear Every Beat</title>
+    <meta name="description" content="Premium wireless headphones with deep bass, long battery life, and immersive sound.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div id="loading-overlay">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">boAt</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#immersive" class="nav-link">Immersive</a></li>
+                <li><a href="#specs" class="nav-link">Specs</a></li>
+                <li><a href="https://www.boat-lifestyle.com/products/rockerz-430-headphone?variant=41533843570786" target="_blank" rel="noopener noreferrer" class="nav-link">Buy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hear Every Beat.</h1>
+            <p class="hero-subtitle">boAt Rockerz 430 — Immersive audio with powerful bass, crafted for true sound lovers.</p>
+            <div class="hero-cta">
+                <a href="https://www.boat-lifestyle.com/products/rockerz-430-headphone?variant=41533843570786" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy Now</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <canvas id="canvas3d" class="hero-canvas"></canvas>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Features</h2>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="card glass animate-on-scroll" style="--stagger-index: 0">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>40mm Drivers</h3>
+                    <p>Precision-engineered drivers deliver crystal clear highs and rich mids.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card glass animate-on-scroll" style="--stagger-index: 1">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Deep Bass</h3>
+                    <p>Feel every thump with enhanced low-frequency response for immersive sound.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card glass animate-on-scroll" style="--stagger-index: 2">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 1 1-9 0"/>
+                            <path d="M12 2v2"/>
+                            <path d="M12 20v2"/>
+                            <path d="M4.93 4.93l1.41 1.41"/>
+                            <path d="M17.66 17.66l1.41 1.41"/>
+                            <path d="M2 12h2"/>
+                            <path d="M20 12h2"/>
+                            <path d="M6.34 17.66l-1.41 1.41"/>
+                            <path d="M19.07 4.93l-1.41 1.41"/>
+                        </svg>
+                    </div>
+                    <h3>Bluetooth 5.0</h3>
+                    <p>Seamless wireless connectivity with stable, lag-free pairing.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="card glass animate-on-scroll" style="--stagger-index: 3">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="6" width="18" height="12" rx="2"/>
+                            <path d="M23 13v-2"/>
+                        </svg>
+                    </div>
+                    <h3>Long Battery Life</h3>
+                    <p>Up to 20 hours of playtime on a single charge. Fast charging support.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="card glass animate-on-scroll" style="--stagger-index: 4">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3>Comfortable Cushions</h3>
+                    <p>Soft memory foam ear cups with premium leather for all-day comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive Experience Section -->
+    <section id="immersive" class="immersive">
+        <div class="container">
+            <div class="immersive-grid">
+                <div class="immersive-text animate-on-scroll">
+                    <h2 class="section-title animate-on-scroll">Immersive Experience</h2>
+                    <p>The Rockerz 430 delivers a concert-like experience right in your ears. Advanced noise isolation and precision tuning create a soundstage that feels alive.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Enhanced noise cancellation</li>
+                        <li><i class="fas fa-check"></i> 360° audio immersion</li>
+                        <li><i class="fas fa-check"></i> Balanced eq for all genres</li>
+                    </ul>
+                </div>
+                <div class="immersive-viewer animate-on-scroll">
+                    <canvas id="canvas3d-immersive" class="immersive-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Specifications</h2>
+            <div class="table-container glass animate-on-scroll">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Driver Size</td>
+                            <td>40mm</td>
+                        </tr>
+                        <tr>
+                            <td>Connectivity</td>
+                            <td>Bluetooth 5.0, AUX</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Up to 20 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Charging</td>
+                            <td>USB Type-C, Fast Charge</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>250g</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth Version</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td>Range</td>
+                            <td>10 meters</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer animate-on-scroll">
+        <div class="container">
+            <a href="https://www.boat-lifestyle.com/products/rockerz-430-headphone?variant=41533843570786" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy Now</a>
+        </div>
+    </footer>
+
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.136.0/build/three.module.js",
+            "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.136.0/examples/jsm/controls/OrbitControls.js",
+            "three/examples/jsm/loaders/GLTFLoader.js": "https://unpkg.com/three@0.136.0/examples/jsm/loaders/GLTFLoader.js"
+        }
+    }
+    </script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
